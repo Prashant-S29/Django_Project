@@ -1,0 +1,44 @@
+{% extends 'navbar.html' %}
+{% block list %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    .mainhead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+    }
+    .mainhead ul{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div class="mainhead">
+        <div>
+            <h1>Follow me to get the latest updates.</h1>
+            <ul>
+                <li>LinkedIn</li>
+                <li>Instagram</li>
+                <li>GitHub</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+{% endblock %}

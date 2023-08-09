@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+</head>
+<style>
+    * {
+        font-family: system-ui;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+    <h2>{{ Day }} Task</h2>
+
+    {% if Day == "Monday" %}
+    <p>This line is only available on day Monday.</p>
+    {% endif %}
+
+    <div><a href="/">Back to Home</a></div>
+
+</body>
+
+</html>

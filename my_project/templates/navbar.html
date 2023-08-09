@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Project</title>
+</head>
+
+<style>
+    *{
+        font-family: system-ui;
+        text-decoration: none;
+        color: black;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: 50px;
+        margin-right:  50px;
+    }
+    ul{
+        list-style-type: none;
+        gap: 30px;
+        display: flex;
+        padding: 0;
+    }
+    button{
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        border: 1px solid black;
+        padding: 8px 15px;
+        border-radius: 50px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <nav>
+        <div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <button onclick="{window.location.href='/joinus'}">Join Us</button>
+        </div>
+    </nav>
+</body>
+{% block list %}
+{% endblock %}
+
+</html>
